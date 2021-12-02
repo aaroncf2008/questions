@@ -1,21 +1,24 @@
-.wide {
-    padding-left: 50px;
-}
 
 /*@start dropdown-list*/
 .dropdown-list {
-    margin: 20px;
+    margin: 20px; // space around the dropdown list, this gives 20px space on all sides
 }
 /*@end dropdown-list*/
 
 
 
 /*@start checkbox*/
+// We 'misuse' a checkbox element to control and set checked and unchecked states, which
+// allows us to do this without JS. We don't want to see the checkbox though, so we hide
+// it and but other elements on top of it.
 input[type="checkbox"].toggle {
     position: absolute;
     display: none;
     top: 0;
     left: 0;
+// instead of only writing a general selector for input[type="checkbox"], we add the
+// specific .toggle class so it will only apply to these checkboxes. We dont want it to
+// mess up any other potential checkbox inputs we might have on our page
 }
 /*@end checkbox*/
 
@@ -27,7 +30,7 @@ input[type="checkbox"].toggle {
 }
 
 .dropdown-list > li:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 20px; // set vertical distance between dropdown items, except the last one in the list
 }
 /*@end dropdown list items*/
 
@@ -35,19 +38,23 @@ input[type="checkbox"].toggle {
 
 /*@start dropdown label*/
 .dropdown-label {
-    background-color: red;
+    // If you want to make the question text bigger or bold or whatever, do that here
+    background-color: red; // background color of the label
+    // display flex and space between puts maximum space between the question and the chevron
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
+    // the -ms- is a CSS browser prefix. It replaces the justify-content
+    //prop below so it will also work on Edge browsers
     justify-content: space-between;
     padding: 10px;
 }
 
 .dropdown-label:hover {
     background-color: darkred;
-    cursor: pointer;
+    cursor: pointer; // change the mouse cursor on hover to indicate it is a clickable element
 }
 
 .dropdown-label:active,
@@ -62,8 +69,8 @@ input[type="checkbox"].toggle {
 /*@start dropdown content*/
 .dropdown-content {
     padding: 5px 10px;
-    background-color: white;
-    color: black;
+    background-color: white; // background of expanded dropdown content
+    color: black; // font color
 }
 /*@end dropdown content*/
 
@@ -73,20 +80,22 @@ input[type="checkbox"].toggle {
 .chevron::after {
     content: ' ';
     display: inline-block;
+    // this makes a little triangle
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
     border-left: 5px solid white;
     margin-right: 10px;
     transform: translateY(-2px);
-    transition: transform .2s ease-out;
+    transition: transform .2s ease-out; // set duration (.2s) of the rotating chevron and the type of animation ( ease-out )
     -webkit-transition: -webkit-transform .2s ease-out;
     transition: -webkit-transform .2s ease-out;
     -o-transition: transform .2s ease-out;
+    // -o- another browser prefix
     transition: transform .2s ease-out, -webkit-transform .2s ease-out;
 }
 
 .toggle:checked + label .chevron::after {
-    transform: rotate(90deg) translateX(-3px);
+    transform: rotate(90deg) translateX(-3px); // when the label has been clicked ( or 'checked' ), we rotate the chevron
     -webkit-transform: rotate(90deg) translateX(-3px);
 }
 /*@end chevron*/

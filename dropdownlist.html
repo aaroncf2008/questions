@@ -1,0 +1,54 @@
+<head>
+    <link rel="stylesheet" href="dropdownlistfix.css">
+</head>
+<!--    semantically, this is a list of items, thus we use a list element here-->
+    <ul class="dropdown-list">
+
+        <li class="dropdown-item">
+<!--            keep in mind that every list item input needs a unique ID coupled to the "for" label attribute-->
+<!--            there is no great semantic unique naming for this imo-->
+            <input id="question-a" class="toggle" type="checkbox">
+            <label for="question-a" class="dropdown-label">
+                What if we have a small screen but a really long question here?
+                <span class="chevron"></span>
+            </label>
+            <div class="dropdown-content">
+                <p>
+                    Still all looks pretty good! Always start out with mobile first. Make
+                    sure things look good on small screens so everyone can enjoy your site
+                    on whatever device.
+                </p>
+            </div>
+        </li>
+
+        <li class="dropdown-item">
+            <input id="question-b" class="toggle" type="checkbox">
+            <label for="question-b" class="dropdown-label">
+                Does it work on all browsers?
+                <span class="chevron"></span>
+            </label>
+            <div class="dropdown-content">
+                <p>
+                    Not all CSS can be used on every browser unfortunately. You can use
+                    <a href="https://caniuse.com">this site</a> to check which CSS properties you
+                    can or can not use on which browsers. For some properties you may have to
+                    use some CSS-browser prefixes ( see the CSS file ) for some extra compatibility
+                    across browsers.
+                </p>
+            </div>
+        </li>
+
+        <li class="dropdown-item">
+            <input id="question-c" class="toggle" type="checkbox">
+            <label for="question-c" class="dropdown-label">
+                Another question goes here
+                <span class="chevron"></span>
+            </label>
+            <div class="dropdown-content">
+                <p>
+                    An answer goes here
+                </p>
+            </div>
+        </li>
+
+    </ul>
