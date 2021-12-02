@@ -40,6 +40,8 @@ input[type="checkbox"].toggle {
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 10px;
+    font-family: 'Lato', sans-serif; 
+    font-weight: 600;
 }
 
 .dropdown-label:hover {
@@ -61,6 +63,8 @@ input[type="checkbox"].toggle {
     padding: 5px 10px;
     background-color: white;
     color: black;
+    font-family: 'Lato', sans-serif; 
+    font-weight: 600;
 }
 /*@end dropdown content*/
 
@@ -93,6 +97,8 @@ input[type="checkbox"].toggle {
 /*@start toggle dropdown content*/
 .dropdown-content {
     display: none;
+    font-family: 'Lato', sans-serif; 
+    font-weight: 600;
 }
 
 .dropdown-item .toggle:checked ~ .dropdown-content {
