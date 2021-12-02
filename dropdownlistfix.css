@@ -32,7 +32,7 @@ input[type="checkbox"].toggle {
 
 /*@start dropdown label*/
 .dropdown-label {
-    background-color: red;
+    background-color: #3b86ff;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -45,14 +45,14 @@ input[type="checkbox"].toggle {
 }
 
 .dropdown-label:hover {
-    background-color: darkred;
+    background-color: #193f7d;
     cursor: pointer;
 }
 
 .dropdown-label:active,
 .dropdown-label:focus,
 .dropdown-label:focus-within {
-    background-color: darkred;
+    background-color: #193f7d;
 }
 /*@end dropdown label*/
 
