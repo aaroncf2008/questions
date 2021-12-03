@@ -1,0 +1,11 @@
+/*@start ul*/
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+/*@end ul*/
+
+body {
+    background-color: var(--primary-color);
+}
+

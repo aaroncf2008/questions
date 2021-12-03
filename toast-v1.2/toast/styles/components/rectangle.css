@@ -1,0 +1,81 @@
+/*for demo purpose only*/
+.rectangle {
+    height: 350px;
+    padding: 10px 20px;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.rectangle p {
+    line-height: 2.5rem;
+}
+
+/*border radius demo*/
+.rectangle.theme-tertiary {
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+
+.rectangle.theme-quaternary {
+    border-top-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+}
+
+.rectangle.theme-quinary {
+    border-radius: var(--border-radius);
+}
+
+.rectangle.theme-senary {
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+}
+
+/*animation demo*/
+.square,
+.circle {
+    height: 100px;
+    width: 100px;
+}
+
+#demo-box {
+    height: 200px;
+    width: 200px;
+}
+
+.circle {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+#rotating-square {
+    animation: rotate-me 5s linear infinite;
+}
+
+#moving-square {
+    animation: move-me 2s ease-in alternate-reverse infinite;
+}
+
+#demo-box {
+    animation: rotate-me 2s linear infinite;
+}
+
+@keyframes rotate-me {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes move-me {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(100px);
+    }
+}

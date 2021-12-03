@@ -1,0 +1,46 @@
+/*@start body*/
+body {
+    color: var(--secondary-color);
+    font-size: 18px;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+@media only screen and (min-width: 768px){
+    body {
+        font-size: 16px;
+    }
+}
+/*@end body*/
+
+
+
+/*@start p*/
+/*a bit more space between lines make it easier to read any text*/
+p {
+    line-height: 1.6rem;
+    font-weight: 300;
+}
+/*@end p*/
+
+
+
+/*@start a*/
+a {
+    color: var(--secondary-color);
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+a:active,
+a:hover,
+a:focus,
+a:focus-within {
+    color: pink;
+}
+
+a:visited {
+    color: red;
+}
+/*@end a*/

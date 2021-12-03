@@ -1,0 +1,91 @@
+/*@start checkbox*/
+input[type="radio"].toggle {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+}
+/*@end checkbox*/
+
+
+
+/*@start dropdown list items*/
+.dropdown-list > li {
+    position: relative;
+}
+
+.dropdown-list > li:not(:last-child) {
+    margin-bottom: 20px;
+}
+/*@end dropdown list items*/
+
+
+
+/*@start dropdown label*/
+.dropdown-label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.dropdown-label:hover {
+    background-color: var(--quaternary-color);
+    cursor: pointer;
+}
+
+.dropdown-label:active,
+.dropdown-label:focus,
+.dropdown-label:focus-within {
+    background-color: var(--quaternary-color);
+}
+/*@end dropdown label*/
+
+
+
+/*@start dropdown content*/
+.dropdown-content {
+    padding: 5px 10px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+/*@end dropdown content*/
+
+
+
+/*@start chevron*/
+.chevron::after {
+    content: ' ';
+    display: inline-block;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid var(--primary-color);
+    margin-right: 10px;
+    transform: translateY(-2px);
+    transition: transform .2s ease-out;
+    -webkit-transition: -webkit-transform .2s ease-out;
+    transition: -webkit-transform .2s ease-out;
+    -o-transition: transform .2s ease-out;
+    transition: transform .2s ease-out, -webkit-transform .2s ease-out;
+}
+
+.toggle:checked + label .chevron::after {
+    transform: rotate(90deg) translateX(-3px);
+    -webkit-transform: rotate(90deg) translateX(-3px);
+}
+/*@end chevron*/
+
+
+
+/*@start toggle dropdown content*/
+.dropdown-content {
+    display: none;
+}
+
+.dropdown-item .toggle:checked ~ .dropdown-content {
+    display: block;
+}
+/*@end toggle dropdown content*/

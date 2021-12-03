@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<!--    very important to scale nicely with smaller screens-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--    title that will show in the browser tab-->
+    <title>Home</title>
+<!--    google font imports-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
+<!--    stylesheet import-->
+    <link rel="stylesheet" type="text/css" media="screen" href="../styles/index.css">
+</head>
+
+<body>
+    <header>
+        <div class="grid">
+            <div class="column">
+                <div class="content">
+                    <h1>A title</h1>
+                    <h2>A subtitle</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="grid">
+                <div class="column two">
+                    <div class="content">
+
+                        <ul class="dropdown-list">
+                            <li class="dropdown-item">
+                                <input id="question-a" class="toggle" type="radio" name="faq-list">
+                                <label for="question-a" class="dropdown-label theme-tertiary">
+                                    What if we have a small screen but a really long question here?
+                                    <span class="chevron"></span>
+                                </label>
+                                <div class="dropdown-content">
+                                    <p>
+                                        Still all looks pretty good! Always start out with mobile first. Make
+                                        sure things look good on small screens so everyone can enjoy your site
+                                        on whatever device.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li class="dropdown-item">
+                                <input id="question-b" class="toggle" type="radio" name="faq-list">
+                                <label for="question-b" class="dropdown-label theme-tertiary">
+                                    Does it work on all browsers?
+                                    <span class="chevron"></span>
+                                </label>
+                                <div class="dropdown-content">
+                                    <p>
+                                        Not all CSS can be used on every browser unfortunately. You can use
+                                        <a href="https://caniuse.com">this site</a> to check which CSS properties you
+                                        can or can not use on which browsers. For some properties you may have to
+                                        use some CSS-browser prefixes ( see the CSS file ) for some extra compatibility
+                                        across browsers.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li class="dropdown-item">
+                                <input id="question-c" class="toggle" type="radio" name="faq-list">
+                                <label for="question-c" class="dropdown-label theme-tertiary">
+                                    Another question goes here
+                                    <span class="chevron"></span>
+                                </label>
+                                <div class="dropdown-content">
+                                    <p>
+                                        An answer goes here
+                                    </p>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="column two">
+                    <div class="content">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fringilla, turpis et viverra
+                            convallis, arcu metus rutrum eros, sit amet accumsan urna nulla in velit. Proin eget ex lacus.
+                            Aliquam fermentum congue ligula et aliquet. Praesent volutpat erat id posuere convallis. Ut ut
+                            libero lacinia, tincidunt elit ut, vulputate metus. Morbi fringilla eros in urna sagittis
+                            ullamcorper. Sed in interdum quam. Ut ac finibus nisi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="grid">
+                <div class="column">
+                    <div class="column four">
+                        <div class="content">
+                            <div class="rectangle theme-tertiary">
+                                <p>
+                                    Here is some text in this box wham!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column four">
+                        <div class="content">
+                            <div class="rectangle theme-quaternary">
+                                <p>
+                                    Here is some text in this box wham!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column four">
+                        <div class="content">
+                            <div class="rectangle theme-quinary">
+                                <p>
+                                    Here is some text in this box wham!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column four">
+                        <div class="content">
+                            <div class="rectangle theme-senary">
+                                <p>
+                                    Here is some text in this box wham!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="grid">
+                <div class="column">
+                    <div class="column">
+                        <div class="content">
+                            <div id="rotating-square" class="square theme-quinary"></div>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="content">
+                            <div id="moving-square" class="square theme-senary"></div>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="content">
+                            <div id="demo-box">
+                                <div class="circle theme-quaternary"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <nav></nav>
+</body>
+</html>
+
+
