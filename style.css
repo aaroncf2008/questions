@@ -35,6 +35,7 @@ input[type="checkbox"].toggle {
 
 /*@start dropdown label*/
 .dropdown-label {
+    text-align: center;
     background-color: red;
     display: -webkit-box;
     display: -ms-flexbox;
