@@ -102,20 +102,3 @@ input[type="checkbox"].toggle {
     display: block;
 }
 /*@end toggle dropdown content*/
-
-code {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: inherit;
-  }
-  
-  /* Code in text */
-  p > code,
-  li > code,
-  dd > code,
-  td > code {
-    background: #6d6b6b;
-    word-wrap: break-word;
-    box-decoration-break: clone;
-    padding: .1rem .3rem .2rem;
-    border-radius: .2rem;
-  }
