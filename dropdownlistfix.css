@@ -52,7 +52,7 @@ input[type="checkbox"].toggle {
 .dropdown-label:active,
 .dropdown-label:focus,
 .dropdown-label:focus-within {
-    background-color: #193f7d;
+    background-color: #3273db;
 }
 /*@end dropdown label*/
 
