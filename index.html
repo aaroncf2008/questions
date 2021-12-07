@@ -18,14 +18,23 @@
                     <span class="chevron"></span>
                 </label>
                 <div class="dropdown-content">
-                    <pre>
                         <p>
                             Check if you are running more than one VPN connection. If you are, you may need to disconnect one of them. 
-                            <code>Sudo Ps -ef | grep openvpn</code> will show you the process ID of the VPN connection. You can then use the kill command to kill the process.
+                            <pre>
+                                <code>
+                                    Sudo Ps -ef | grep openvpn
+                                </code>
+                            </pre> 
+                            will show you the process ID of the VPN connection. You can then use the kill command to kill the process.
                             You also may not be connected to the VPN server. Check your connection to the VPN server.
-                            Use <code>Sudo Ps -ef | grep openvpn</code> if you have a valid VPN connection.
+                            Use 
+                            <pre>
+                                <code>
+                                    Sudo Ps -ef | grep openvpn
+                                </code>
+                            </pre> 
+                            if you have a valid VPN connection.
                         </p>
-                    <pre>
                 </div>
             </li>
     <!-- hey -->
