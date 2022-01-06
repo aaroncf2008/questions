@@ -32,7 +32,7 @@ input[type="checkbox"].toggle {
 
 /*@start dropdown label*/
 .dropdown-label {
-    background-color: #3b86ff;
+    background-color: #dae1ec;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
