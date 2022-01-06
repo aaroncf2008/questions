@@ -45,14 +45,14 @@ input[type="checkbox"].toggle {
 }
 
 .dropdown-label:hover {
-    background-color: #3273db;
+    background-color: #dae1ec;
     cursor: pointer;
 }
 
 .dropdown-label:active,
 .dropdown-label:focus,
 .dropdown-label:focus-within {
-    background-color: #3273db;
+    background-color: #777777;
 }
 /*@end dropdown label*/
 
